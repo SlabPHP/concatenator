@@ -1,0 +1,39 @@
+{
+  "name": "slabphp/concatenator",
+  "description": "SlabPHP File and Resource Concatenator",
+  "type": "library",
+  "keywords": ["php", "slab", "slabphp", "concatenator"],
+  "homepage": "https://www.salernolabs.com/slab",
+  "time": "2018-02-20",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Eric Salerno",
+      "email": "ericsalerno@gmail.com",
+      "homepage": "http://www.ericsalerno.com/",
+      "role": "Architect"
+    }
+  ],
+  "support":{
+    "email": "salernolabs@gmail.com"
+  },
+  "require-dev":{
+    "phpunit/phpunit": "^6.5"
+  },
+  "suggest": {
+    "salernolabs/collapser": "Allows the use of the built-in collapse filters.",
+    "guzzlehttp/guzzle": "Allows the use of the built-in URL item."
+  },
+  "require": {
+    "psr/log": "^1.0",
+    "salernolabs/collapser": "^0.1.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "psr/simple-cache": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Slab\\Concatenator\\": "src/",
+      "Slab\\Tests\\Concatenator\\": "tests/"
+    }
+  }
+}
