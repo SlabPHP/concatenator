@@ -39,4 +39,15 @@ class URL extends \Slab\Concatenator\Items\Base
 
         return filter_var($this->value, FILTER_VALIDATE_URL);
     }
+
+    /**
+     * Get last modified timestamp
+     *
+     * @return mixed|void
+     */
+    public function getLastModifiedTimestamp()
+    {
+        return time();
+    }
+
 }
