@@ -25,7 +25,7 @@ class ManagerTest extends \PHPUnit\Framework\TestCase
 
         $output = $manager->getOutput();
 
-        $this->assertContains('#thing { font-weight: bold; }', $output);
+        $this->assertContains('#thing { font-weight: bold; }' . PHP_EOL, $output);
         $this->assertContains('#thing { font-style: oblique; }', $output);
     }
 }

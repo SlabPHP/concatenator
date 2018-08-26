@@ -17,9 +17,12 @@ Set it up for where to look for files:
     $manager
         ->setFileSearchDirectories([__DIR__ . '/resources'])
         ->addObject('css/test.css', [])
-        ->addObject('css/something.css', [])
-        ->concatenateObjectList();
+        ->addObject('css/something.css', []);
 
 Then just concatenate it:
+
+    $manager->concatenateObjectList();
+    
+Retrieve the output:
 
     $output = $manager->getOutput();

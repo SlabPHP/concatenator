@@ -108,7 +108,7 @@ abstract class Base implements \Slab\Concatenator\Items\ItemInterface
      */
     protected function postProcessData()
     {
-        $comment = "\n/* " . (!empty($this->filters) ? implode('|', $this->filters) . '::' : '') . $this->value . " */\n";
+        $comment = PHP_EOL . '/* ' . (!empty($this->filters) ? implode('|', $this->filters) . '::' : '') . $this->value . ' */' . PHP_EOL;
 
         $this->output = $comment . $this->output;
     }

@@ -263,7 +263,7 @@ class Manager
      */
     private function formatLastModifiedTime()
     {
-        return '/* modified:' . date('c', $this->lastModifiedTime) . " */\n";
+        return '/* modified:' . date('c', $this->lastModifiedTime) . ' */' . PHP_EOL;
     }
 
     /**
